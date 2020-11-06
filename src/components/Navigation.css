@@ -1,0 +1,6 @@
+.nav{position: fixed;bottom: 0;height: 55px;display: flex;width: 100%;justify-content: space-around;align-items: center;border-top:1px solid #c2c4ca;background:  #f1f2f4;z-index: 1;}
+.nav>a{width: 50px;text-align: center;font-size: 10px;display: flex;flex-direction: column;justify-content: center;color: #aea4a4;transition: all 1s ease 0s;text-decoration: none;}
+.nav>a>i{font-size: 22px;}
+.nav>a>span{padding-top: 4px;box-sizing: border-box;}
+.nav>a:hover{transform: scale(1.1);}
+.nav>a.active{color: #513736;}

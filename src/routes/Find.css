@@ -1,0 +1,38 @@
+/* header */
+.top_header{display: flex;flex-direction: column;box-sizing: border-box;height: 65px;background: #513736;color: #fff;font-size: 12px;}
+.header_top{display: flex;justify-content: space-between;height: 20px;align-items: center;}
+.header_top>.header_row{flex: 1;}
+.header_top>.header_row:nth-of-type(1){padding-left: 10px;box-sizing: border-box;}
+.header_top>.header_row:nth-of-type(2){text-align: center;}
+.header_top>.header_row:nth-of-type(3){padding-right: 10px;box-sizing: border-box;text-align: right;}
+
+.header_bottom{display: flex;justify-content: space-between;align-items: center;height: 45px;font-size: 16px;}
+.header_bottom .header_row{flex: 1;}
+.header_bottom>.header_row:nth-of-type(1){padding-left: 10px;box-sizing: border-box;opacity: 0.6;}
+
+.header_bottom>.header_row:nth-of-type(2){text-align: center;}
+.header_bottom>.header_row:nth-of-type(2) em{font-style: normal;color: yellow;margin-left: 4px;}
+
+.header_bottom>.header_row:nth-of-type(3){padding-right: 10px;box-sizing: border-box;text-align: right;}
+
+/* main */
+.freinds{display: flex;flex-direction: column;}
+
+/* option */
+.find_options{display: flex;justify-content: space-around;align-items: center; height: 80px;background: #f1f2f4;}
+.find_options>div{display: flex;flex-direction: column;align-items: center;color: #4d3a36;}
+.find_options>div>i{font-size: 20px;}
+.find_options>div>span{font-size: 12px;padding-top: 6px;}
+
+/* find zone */
+.find_section_header{height: 20px;border-bottom: 1px solid  #e1e3e8;border-top: 1px solid  #e1e3e8;display: flex; align-items: center;}
+.find_section_header h2{font-size: 11px;padding-left: 10px;color: #aaadb4;}
+
+.find_section{display: flex;flex-direction: column;}
+.find_section_column{display: flex;flex-direction: row;justify-content: center;align-items: center;height: 60px;box-sizing: border-box;border-bottom: 1px solid #e1e3e8;}
+.find_section_column span{font-size: 14px;color: #a9abb3;}
+main{animation: ani 0.5s ease 0s;position: relative;top: 0;}
+@keyframes ani{
+    0%{top: 100px;opacity: 0;}
+    100%{top: 0px;opacity: 1;}
+}
