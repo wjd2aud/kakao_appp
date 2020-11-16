@@ -1,123 +1,131 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import Navigation from '../components/Navigation';
+
+
+import imgA from '../images/myimg.jpg';
+import imgB from '../images/kakaostory.png';
+import imgC from '../images/path.png';
+import imgD from '../images/kakaofriends.png';
 
 import './More.css';
 
 function More() {
     return (
         <div>
-            <header class="top_header">
-        <div class="header_top">
-            <div class="header_row">
-                <i class="fas fa-plane"></i>
-                <i class="fas fa-wifi"></i>
+            <header className="top_header">
+        <div className="header_top">
+            <div className="header_row">
+                <i className="fas fa-plane"></i>
+                <i className="fas fa-wifi"></i>
             </div>
-            <div class="header_row">
-                <span class="header_time">17:33</span>
+            <div className="header_row">
+                <span className="header_time">17:33</span>
             </div>
-            <div class="header_row">
-                <i class="far fa-moon"></i>
-                <i class="fab fa-bluetooth-b"></i>
-                <span class="header_battery">100% <i class="fas fa-battery-full"></i></span>
+            <div className="header_row">
+                <i className="far fa-moon"></i>
+                <i className="fab fa-bluetooth-b"></i>
+                <span className="header_battery">100% <i className="fas fa-battery-full"></i></span>
             </div>
         </div>
-        <div class="header_bottom">
-            <div class="header_row">
+        <div className="header_bottom">
+            <div className="header_row">
             </div>
-            <div class="header_row">
-                <span class="header_txt">More</span>
+            <div className="header_row">
+                <span className="header_txt">More</span>
             </div>
-            <div class="header_row">
-                <i class="fas fa-cog"></i>
+            <div className="header_row">
+                <i className="fas fa-cog"></i>
             </div>
         </div>
     </header>
-    <main class="more">
-        <div class="more_profile">
-                <img src="images/empty.jpg" alt="profileImg"/>
-                <div class="profile_name">
-                    <span>My Name<br/><em>UserId@gmail.com</em></span>
+    <main className="more">
+        <div className="more_profile">
+                <img src={imgA} alt="profileImg"/>
+                <div className="profile_name">
+                    <span>Jeong Ho young<br/><em>Userid@gmail.com</em></span>
                 </div>
-                <div class="profile_chat"><i class="far fa-comment"></i></div>
+                <div className="profile_chat"><i className="far fa-comment"></i></div>
         </div>
-        <div class="more_option">
+        <div className="more_option">
             <ul>
                 <li>
-                    <i class="far fa-grin"></i>
+                    <i className="far fa-grin"></i>
                     <span>Emoticons</span>
                 </li>
                 <li>
-                    <i class="fas fa-paint-brush"></i>
+                    <i className="fas fa-paint-brush"></i>
                     <span>Themes</span>
                 </li>
                 <li>
-                    <i class="far fa-hand-peace"></i>
+                    <i className="far fa-hand-peace"></i>
                     <span>Plus Friend</span>
                 </li>
                 <li>
-                    <i class="far fa-user-circle"></i>
+                    <i className="far fa-user-circle"></i>
                     <span>Account</span>
                 </li>
             </ul>
         </div>
-        <div class="more_Plus">
-            <div class="Plus_top">
+        <div className="more_Plus">
+            <div className="Plus_top">
                 <p>Plus Friends</p>
-                <p><i class="fas fa-info-circle"></i>Learn More</p>
+                <p><i className="fas fa-info-circle"></i>Learn More</p>
             </div>
-            <div class="Plus_bottom">
+            <div className="Plus_bottom">
                 <ul>
                     <li>
-                        <i class="fas fa-info-circle"></i>
+                        <i className="fas fa-info-circle"></i>
                         <span>Order</span>
                     </li>
                     <li>
-                        <i class="fas fa-home"></i>
+                        <i className="fas fa-home"></i>
                         <span>Store</span>
                     </li>
                     <li>
-                        <i class="fas fa-tv"></i>
+                        <i className="fas fa-tv"></i>
                         <span>TV Channel/Radio</span>
                     </li>
                     <li>
-                        <i class="fas fa-pencil-alt"></i>
+                        <i className="fas fa-pencil-alt"></i>
                         <span>Creation</span>
                     </li>
                     <li>
-                        <i class="fas fa-graduation-cap"></i>
+                        <i className="fas fa-graduation-cap"></i>
                         <span>Education</span>
                     </li>
                     <li>
-                        <i class="fas fa-landmark"></i>
+                        <i className="fas fa-landmark"></i>
                         <span>Politics/Society</span>
                     </li>
                     <li>
-                        <i class="fas fa-won-sign"></i>
+                        <i className="fas fa-won-sign"></i>
                         <span>Finance</span>
                     </li>
                     <li>
-                        <i class="fas fa-video"></i>
+                        <i className="fas fa-video"></i>
                         <span>Movies/Music</span>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="more_link">
+        <div className="more_link">
             <ul>
                 <li>
-                    <img src="images/kakaostory.png" alt="카카오스토리"/>
+                    <img src={imgB} alt="카카오스토리"/>
                     <span>Kakao Story</span>
                 </li>
                 <li>
-                    <img src="images/path.png" alt="Path"/>
+                    <img src={imgC} alt="Path"/>
                     <span>Path</span>
                 </li>
                 <li>
-                    <img src="images/kakaofriends.png" alt="카카오프렌즈"/>
+                    <img src={imgD} alt="카카오프렌즈"/>
                     <span>Kakao Friends</span>
                 </li>
             </ul>
         </div>
     </main>
+    <Navigation />
         </div>
     )
 }

@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
-import {Link , NavLink} from 'react-router-dom';
 import axios from 'axios';
 
 import Chatitem from '../components/Chatitem';
 import ImgJSON from '../data/imgJSON.json';
+import Navigation from '../components/Navigation';
+
 
 import './Chats.css';
+
 
 export default class Chats extends Component {
     state = {
@@ -74,6 +76,7 @@ export default class Chats extends Component {
             <i className="fa fa-comment"></i>
           </div>
     </main>
+    <Navigation />
         </div>
             </div>
         )

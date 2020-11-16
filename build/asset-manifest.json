@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Kakao/static/css/main.581a1872.chunk.css",
+    "main.js": "/Kakao/static/js/main.8ce9c050.chunk.js",
+    "main.js.map": "/Kakao/static/js/main.8ce9c050.chunk.js.map",
+    "runtime-main.js": "/Kakao/static/js/runtime-main.cb6656cd.js",
+    "runtime-main.js.map": "/Kakao/static/js/runtime-main.cb6656cd.js.map",
+    "static/js/2.8b3dc689.chunk.js": "/Kakao/static/js/2.8b3dc689.chunk.js",
+    "static/js/2.8b3dc689.chunk.js.map": "/Kakao/static/js/2.8b3dc689.chunk.js.map",
+    "index.html": "/Kakao/index.html",
+    "static/css/main.581a1872.chunk.css.map": "/Kakao/static/css/main.581a1872.chunk.css.map",
+    "static/js/2.8b3dc689.chunk.js.LICENSE.txt": "/Kakao/static/js/2.8b3dc689.chunk.js.LICENSE.txt",
+    "static/media/kakaofriends.84375bb9.png": "/Kakao/static/media/kakaofriends.84375bb9.png",
+    "static/media/kakaostory.572f3ce5.png": "/Kakao/static/media/kakaostory.572f3ce5.png",
+    "static/media/mybg.5004e211.jpg": "/Kakao/static/media/mybg.5004e211.jpg",
+    "static/media/myimg.3cf813ba.jpg": "/Kakao/static/media/myimg.3cf813ba.jpg",
+    "static/media/path.7d00edf7.png": "/Kakao/static/media/path.7d00edf7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb6656cd.js",
+    "static/js/2.8b3dc689.chunk.js",
+    "static/css/main.581a1872.chunk.css",
+    "static/js/main.8ce9c050.chunk.js"
+  ]
+}

@@ -1,65 +1,67 @@
 import React from 'react'
+import Navigation from '../components/Navigation';
 
 import './Find.css';
 
 function Find() {
     return (
         <div>
-            <header class="top_header">
-        <div class="header_top">
-            <div class="header_row">
-                <i class="fas fa-plane"></i>
-                <i class="fas fa-wifi"></i>
+            <header className="top_header">
+        <div className="header_top">
+            <div className="header_row">
+                <i className="fas fa-plane"></i>
+                <i className="fas fa-wifi"></i>
             </div>
-            <div class="header_row">
-                <span class="header_time">17:33</span>
+            <div className="header_row">
+                <span className="header_time">17:33</span>
             </div>
-            <div class="header_row">
-                <i class="far fa-moon"></i>
-                <i class="fab fa-bluetooth-b"></i>
-                <span class="header_battery">100% <i class="fas fa-battery-full"></i></span>
+            <div className="header_row">
+                <i className="far fa-moon"></i>
+                <i className="fab fa-bluetooth-b"></i>
+                <span className="header_battery">100% <i className="fas fa-battery-full"></i></span>
             </div>
         </div>
-        <div class="header_bottom">
-            <div class="header_row">
-                <span class="header_txt">Edit</span>
+        <div className="header_bottom">
+            <div className="header_row">
+                <span className="header_txt">Edit</span>
             </div>
-            <div class="header_row">
-                <span class="header_txt">Find</span>
+            <div className="header_row">
+                <span className="header_txt">Find</span>
             </div>
-            <div class="header_row">
+            <div className="header_row">
             </div>
         </div>
     </header>
-    <main class="find">
-        <section class="find_options">
+    <main className="find">
+        <section className="find_options">
             <div>
-                <i class="fas fa-address-book"></i>
+                <i className="fas fa-address-book"></i>
                 <span>Find</span>
             </div>
             <div>
-                <i class="fas fa-qrcode"></i>
+                <i className="fas fa-qrcode"></i>
                 <span>QR Code</span>
             </div>
             <div>
-                <i class="fas fa-mobile-alt"></i>
+                <i className="fas fa-mobile-alt"></i>
                 <span>Shake</span>
             </div>
             <div>
-                <i class="far fa-envelope"></i>
+                <i className="far fa-envelope"></i>
                 <span>Invite via SMS</span>
             </div>
         </section>
-        <div class="find_section">
-            <header class="find_section_header">
+        <div className="find_section">
+            <header className="find_section_header">
                 <h2>Recommended Friends</h2>
             </header>
-            <div class="find_section_column">
+            <div className="find_section_column">
                 <span>You have no recommended friends.</span>
             </div>
         </div>
 
     </main>
+    <Navigation />
         </div>
     )
 }

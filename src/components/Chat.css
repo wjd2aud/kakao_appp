@@ -3,7 +3,7 @@ a{text-decoration: none;color: #000;}
 .chat_body{background: #a1c0d5;height: 98vh;}
 .C_top_header{display: flex;flex-direction: column;box-sizing: border-box;height: 65px;background: #a1c0d5;color: #000;font-size: 12px;border: 1px solid #8cabc0;}
 .C_header_top{display: flex;justify-content: space-between;height: 20px;align-items: center;}
-.C_header_top>.header_row{flex: 1;}
+.C_header_top>.header_row{}
 .C_header_top>.header_row:nth-of-type(1){padding-left: 10px;box-sizing: border-box;}
 .C_header_top>.header_row:nth-of-type(2){text-align: center;}
 .C_header_top>.header_row:nth-of-type(3){padding-right: 10px;box-sizing: border-box;text-align: right;}

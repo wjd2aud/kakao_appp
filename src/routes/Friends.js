@@ -1,10 +1,28 @@
-import React from 'react'
-import {Link , NavLink} from 'react-router-dom';
-import './Friends.css'
+import React,{useState,useEffect} from 'react';
+import axios from 'axios';
+import ImgJSON from '../data/imgJSON.json';
+import bgJSON from '../data/bgJSON.json';
+import FriendsList from '../components/FriendsList';
 
-import imgA from '../images/empty.jpg';
+
+import {Link , NavLink} from 'react-router-dom';
+import Navigation from '../components/Navigation';
+import './Friends.css';
+
+import imgA from '../images/myimg.jpg';
+import bgA from '../images/mybg.jpg';
 
 function Friends() {
+
+    const [names,setNames] = useState([]);
+    const [comments,setComments] = useState([]);
+
+    let getData = async () => {
+        const {data : names} = await axios.get('https://jsonplaceholder.typicode.com/users');
+        setNames(names);
+    }
+    useEffect(getData,[]);
+
     return (
     <div>
         <header className="top_header">
@@ -45,14 +63,15 @@ function Friends() {
                 </header>
                 <div className="freinds_section_columns">
                     <div className="freinds_section_column">
-                        <Link to="Profile">
-                            <img src={imgA} alt="profileImg" /><span>My Name</span>
+                        <Link to={{
+                            pathname : "/Profile",
+                            state : {id : 0, name: "Jeong Ho young", img : false, bg: false}
+                            }}>
+                            <img src={imgA} alt="profileImg" /><span>Jeong Ho young</span>
                         </Link>
+                        
                     </div>
-                    <div className="freinds_section_column">
-                            <img src={imgA} alt="profileImg" />
-                            <span>Friend's Names Display</span>
-                    </div>
+                    
                 </div>
             </div>
             <div className="friends_section">
@@ -61,36 +80,20 @@ function Friends() {
                 </header>
                 <div className="friends_section_columns">
                     <div className="friends_section_columns_tag">
-                        <div className="freinds_section_column">
-                            <img src={imgA} alt="profileImg" />
-                            <span>Friend Name</span>
-                            <span className="profile_tag">Have a good day. See you soon.</span>
-                        </div>
-                    </div>
-                    <div className="friends_section_columns_tag">
-                        <div className="freinds_section_column">
-                            <img src={imgA} alt="profileImg" />
-                            <span>Friend Name</span>
-                            <span className="profile_tag">Have a good day. See you soon.</span>
-                        </div>
-                    </div>
-                    <div className="friends_section_columns_tag">
-                        <div className="freinds_section_column">
-                            <img src={imgA} alt="profileImg" />
-                            <span>Friend Name</span>
-                            <span className="profile_tag">Have a good day. See you soon.</span>
-                        </div>
-                    </div>
-                    <div className="friends_section_columns_tag">
-                        <div className="freinds_section_column">
-                            <img src={imgA} alt="profileImg" />
-                            <span>Friend Name</span>
-                            <span className="profile_tag">Have a good day. See you soon.</span>
-                        </div>
+                        {names.map((name, idx)=>(
+                            <FriendsList 
+                                id = {name.id}
+                                name = {name.name}
+                                text = {name.company.catchPhrase}
+                                img = {ImgJSON[idx].img}
+                                bg = {bgJSON[idx].img}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
         </main>
+        <Navigation />
     </div>
     )
 }
